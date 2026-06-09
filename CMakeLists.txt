@@ -1,0 +1,47 @@
+cmake_minimum_required(VERSION 3.20)
+project(FlangMPIChecker VERSION 1.0.0 LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+find_package(LLVM REQUIRED CONFIG)
+find_package(MLIR REQUIRED CONFIG)
+
+message(STATUS "LLVM version : ${LLVM_PACKAGE_VERSION}")
+message(STATUS "LLVM include : ${LLVM_INCLUDE_DIRS}")
+message(STATUS "LLVM lib dir : ${LLVM_LIBRARY_DIRS}")
+
+string(REGEX MATCH "^[0-9]+" LLVM_PACKAGE_VERSION_MAJOR "${LLVM_PACKAGE_VERSION}")
+if(NOT LLVM_PACKAGE_VERSION_MAJOR EQUAL 18)
+  message(FATAL_ERROR
+    "flang-mpi-checker requires LLVM/Flang 18; found ${LLVM_PACKAGE_VERSION}")
+endif()
+
+list(APPEND CMAKE_MODULE_PATH "${LLVM_CMAKE_DIR}")
+include(AddLLVM)
+include_directories(${LLVM_INCLUDE_DIRS} ${MLIR_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR}/include)
+link_directories(${LLVM_LIBRARY_DIRS})
+add_definitions(${LLVM_DEFINITIONS})
+
+include(TestBigEndian)
+test_big_endian(FLANG_MPI_CHECKER_BIG_ENDIAN)
+if(FLANG_MPI_CHECKER_BIG_ENDIAN)
+  add_compile_definitions(FLANG_BIG_ENDIAN=1)
+else()
+  add_compile_definitions(FLANG_LITTLE_ENDIAN=1)
+endif()
+
+if(MSVC)
+  add_compile_options(/W4)
+else()
+  add_compile_options(-Wall -Wextra -fno-rtti -Wno-unused-parameter)
+endif()
+
+option(ENABLE_TESTS "Build the test suite" ON)
+add_subdirectory(lib)
+add_subdirectory(tools/flang-mpi-checker)
+if(ENABLE_TESTS)
+  enable_testing()
+  add_subdirectory(test)
+endif()
+install(DIRECTORY include/ DESTINATION include)

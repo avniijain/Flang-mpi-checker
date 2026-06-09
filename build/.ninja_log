@@ -1,0 +1,10 @@
+# ninja log v5
+11707	37165	1781014021386929000	tools/flang-mpi-checker/CMakeFiles/flang-mpi-checker.dir/main.cpp.o	2ad66c88776338a5
+2	12351	1781014104865384200	lib/Analysis/CMakeFiles/FlangMPICheckerAnalysis.dir/CorrectnessRules.cpp.o	c57618e1a951f4a7
+0	8678	1778474073685222900	lib/MPI/CMakeFiles/FlangMPICheckerMPI.dir/MPIMetadata.cpp.o	38f0a9ba576881d0
+44628	44687	1781014183645639500	lib/Analysis/libFlangMPICheckerAnalysis.a	3332f2678f0d49c6
+44475	44628	1781014183585235100	lib/MPI/libFlangMPICheckerMPI.a	dee70900027e63a1
+9	44475	1781014183430219100	lib/MPI/CMakeFiles/FlangMPICheckerMPI.dir/MPICallExtractor.cpp.o	2298b4f24b8d2e8a
+834	1036	1778474066042993000	lib/Diagnostics/libFlangMPICheckerDiagnostics.a	8497f8642fc22566
+44687	59674	1781014198562265300	tools/flang-mpi-checker/flang-mpi-checker	817200faf43c0c64
+1	827	1778474065833770300	lib/Diagnostics/CMakeFiles/FlangMPICheckerDiagnostics.dir/DiagnosticEngine.cpp.o	b3c8d302a835ac99

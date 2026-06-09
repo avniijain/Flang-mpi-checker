@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/mnt/D/Projects/CDEL/flang-mpi-checker/build",
+  "command": "/usr/bin/c++ -DFLANG_LITTLE_ENDIAN=1 -I/usr/lib/llvm-18/include -I/mnt/D/Projects/CDEL/flang-mpi-checker/include -O3 -DNDEBUG   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Wall -Wextra -fno-rtti -Wno-unused-parameter -std=gnu++17 -o lib/MPI/CMakeFiles/FlangMPICheckerMPI.dir/MPIMetadata.cpp.o -c /mnt/D/Projects/CDEL/flang-mpi-checker/lib/MPI/MPIMetadata.cpp",
+  "file": "/mnt/D/Projects/CDEL/flang-mpi-checker/lib/MPI/MPIMetadata.cpp"
+},
+{
+  "directory": "/mnt/D/Projects/CDEL/flang-mpi-checker/build",
+  "command": "/usr/bin/c++ -DFLANG_LITTLE_ENDIAN=1 -I/usr/lib/llvm-18/include -I/mnt/D/Projects/CDEL/flang-mpi-checker/include -O3 -DNDEBUG   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Wall -Wextra -fno-rtti -Wno-unused-parameter -std=gnu++17 -o lib/MPI/CMakeFiles/FlangMPICheckerMPI.dir/MPICallExtractor.cpp.o -c /mnt/D/Projects/CDEL/flang-mpi-checker/lib/MPI/MPICallExtractor.cpp",
+  "file": "/mnt/D/Projects/CDEL/flang-mpi-checker/lib/MPI/MPICallExtractor.cpp"
+},
+{
+  "directory": "/mnt/D/Projects/CDEL/flang-mpi-checker/build",
+  "command": "/usr/bin/c++ -DFLANG_LITTLE_ENDIAN=1 -I/usr/lib/llvm-18/include -I/mnt/D/Projects/CDEL/flang-mpi-checker/include -O3 -DNDEBUG   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Wall -Wextra -fno-rtti -Wno-unused-parameter -std=gnu++17 -o lib/Analysis/CMakeFiles/FlangMPICheckerAnalysis.dir/CorrectnessRules.cpp.o -c /mnt/D/Projects/CDEL/flang-mpi-checker/lib/Analysis/CorrectnessRules.cpp",
+  "file": "/mnt/D/Projects/CDEL/flang-mpi-checker/lib/Analysis/CorrectnessRules.cpp"
+},
+{
+  "directory": "/mnt/D/Projects/CDEL/flang-mpi-checker/build",
+  "command": "/usr/bin/c++ -DFLANG_LITTLE_ENDIAN=1 -I/usr/lib/llvm-18/include -I/mnt/D/Projects/CDEL/flang-mpi-checker/include -O3 -DNDEBUG   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Wall -Wextra -fno-rtti -Wno-unused-parameter -std=gnu++17 -o lib/Diagnostics/CMakeFiles/FlangMPICheckerDiagnostics.dir/DiagnosticEngine.cpp.o -c /mnt/D/Projects/CDEL/flang-mpi-checker/lib/Diagnostics/DiagnosticEngine.cpp",
+  "file": "/mnt/D/Projects/CDEL/flang-mpi-checker/lib/Diagnostics/DiagnosticEngine.cpp"
+},
+{
+  "directory": "/mnt/D/Projects/CDEL/flang-mpi-checker/build",
+  "command": "/usr/bin/c++ -DFLANG_LITTLE_ENDIAN=1 -I/usr/lib/llvm-18/include -I/mnt/D/Projects/CDEL/flang-mpi-checker/include -O3 -DNDEBUG   -D_GNU_SOURCE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -Wall -Wextra -fno-rtti -Wno-unused-parameter -std=gnu++17 -o tools/flang-mpi-checker/CMakeFiles/flang-mpi-checker.dir/main.cpp.o -c /mnt/D/Projects/CDEL/flang-mpi-checker/tools/flang-mpi-checker/main.cpp",
+  "file": "/mnt/D/Projects/CDEL/flang-mpi-checker/tools/flang-mpi-checker/main.cpp"
+}
+]
